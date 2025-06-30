@@ -25,7 +25,7 @@
   overflow-x:auto;
   gap:1vw;
 }
-.gallery-scroll::-webkit-scrollbar { 
+.book-scroll::-webkit-scrollbar { 
   display:none; 
 }
 
