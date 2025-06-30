@@ -1,0 +1,132 @@
+* { 
+  box-sizing: border-box; 
+}
+
+.events-filter {
+  opacity: 80%;
+  margin-top:3vw;
+  margin-left: 2vw;
+}
+.events-filter span {
+  margin-right:1vw; 
+  cursor:pointer;
+}
+.filter.active { 
+  border-bottom:1px solid white; 
+}
+
+.event-block {
+  margin-top: 1vw;
+  height:85vh; 
+  display:flex;
+  flex-direction:column;
+  padding:2vh 2vw; 
+  margin-bottom:5vw;
+}
+.event-top {
+  display:flex; 
+  justify-content:space-between;
+  flex:1;
+}
+
+.event-title { 
+  margin:0; 
+}
+
+.event-date { 
+  font-size:1.2vw !important;
+  margin-top:1vw; 
+  font-style: italic; 
+}
+
+.event-images {
+  display:flex; 
+  gap:1vw;
+}
+.event-images img {
+  height:70vh; 
+  object-fit:cover;
+}
+.event-image {
+  position:relative; 
+  height:70vh;
+}
+.img-hover {
+  position:absolute; 
+  top:0; 
+  left:0; 
+  visibility:hidden;
+}
+.event-image:hover .img-hover {
+  visibility:visible;
+}
+.event-image:hover .img-default {
+  visibility:hidden;
+}
+
+.img-grey {
+  filter:grayscale(100%); 
+  transition:filter .2s;
+}
+.img-grey:hover { 
+  filter:none; 
+}
+
+.event-bottom {
+  display:flex; 
+  justify-content:space-between;
+  align-items:flex-start; 
+  margin-top:2vh;
+}
+.event-desc { 
+  width:60vw; 
+}
+
+.btn-signup { 
+  font-size:1.2vw !important;
+  font-family: 'Suisse_medium' !important;
+  border:none; 
+  cursor:pointer; 
+}
+
+.btn-disabled {
+  font-size:1.2vw !important;
+  font-family: 'Suisse_medium' !important;
+  color:grey; 
+}
+
+.mero-signup-form,
+.mero-signup-message {
+  display:none;
+  position:fixed; 
+  inset:0; 
+  z-index:1000;
+}
+.mero-signup-overlay {
+  position:absolute; 
+  inset:0;
+  background:rgba(0,0,0,0.5);
+}
+.mero-signup-content {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  padding:2vh 2vw;
+  display:flex; 
+  align-items:center; 
+  gap:2vw;
+  color:white;
+}
+.mero-signup-form input,
+.sipgnup-form button {
+  padding:1vh 1vw;
+  margin-right:1vw;
+  background:#000000; 
+  border:1px solid #555; 
+  color:white;
+}
+.mero-signup-form button {
+  background:white; 
+  color:black; 
+  margin-right:0;
+}

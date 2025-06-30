@@ -1,0 +1,46 @@
+* { 
+  box-sizing: border-box; 
+}
+
+.artifacts-filter {
+  opacity: 80%;
+  margin:3vw 2vw 2vw 2vw;
+}
+.art-filter {
+  cursor:pointer;
+  margin-left:1vw;
+}
+.art-filter.active {
+  border-bottom:0.1vw solid white;
+}
+
+.artifacts-main .artifact-row {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:2vw;
+  width:80vw;
+  margin:0 0 0 auto;
+  padding:0vw 2vw;
+}
+
+.artifact-block {
+  display:flex;
+  flex-direction:column;
+}
+
+.artifact-image {
+  width:35vw;
+  height:35vw;
+  background:white;
+}
+
+.artifact-info { 
+  text-align:right; 
+}
+
+.request {
+  display:inline-block;
+  margin-top:0.5vw;
+  color:grey;
+}

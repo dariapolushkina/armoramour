@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Suisse';
+  src: url('../fonts/SuisseIntl-Regular.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Suisse' !important;
+  font-size: 0.95vw !important;
+  line-height: 1.32vw !important; 
+  letter-spacing: 0.02vw !important;
+  color: white;
+}
+
+.bg-grad {
+  width: 100vw;
+  height: 100vh;
+  background:
+    linear-gradient(115deg, #c6c6c6 10%, #292929 100%),
+    radial-gradient(190% 100% at calc(50% + var(--x,0px)) calc(0% + var(--y,0px)), #ffffff, #1c1c1c),
+    radial-gradient(190% 100% at calc(80% - var(--x,0px)) calc(0% - var(--y,0px)), #e0e0e0, #fafafa),
+    radial-gradient(150% 210% at calc(100% + var(--x,0px)) calc(0% + var(--y,0px)), #999, #222),
+    radial-gradient(100% 100% at calc(100% - var(--x,0px)) calc(30% - var(--y,0px)), #ccc, #5e5e5e),
+    linear-gradient(40deg, #696969, #ffffff);
+  background-blend-mode: overlay,overlay,difference,difference,difference,normal;
+  transition: background 0.15s;
+  filter: blur(5px);
+}
+
+.bg-img {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;   
+  z-index: 1;              
+  background: url('../images/Group.png') center/cover no-repeat;
+  opacity: 0.2;    
+  mix-blend-mode: difference; 
+}
+
+.circle {
+  position: absolute;
+  bottom: 1.5vw;
+  left: 1.5vw;
+  width: 8vh;
+  height: 8vh;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity 0.3s;
+}
+.circle:hover {
+  mix-blend-mode: darken;
+}
+
+.reveal-on-hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  padding: 1.5vw 1.5vw 1.5vw 10vh;
+  z-index: 1;
+  height: 88vh;
+  transition: opacity 0.25s;
+}
+.show-text .reveal-on-hover {
+  opacity: 1;
+}
+
+.left-logo {
+  position: absolute;
+  left: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5vh;
+}
+
+.logo-img {
+  width: 6vw;
+  object-fit: contain;
+  display: block;
+}
+
+.right-blocks {
+  position: absolute;
+  right: 1.5vw;
+}
+
+.top-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13vh;
+}
+
+.top-left { width: 7vw; }
+.top-right { width: 30vw; }
+
+.bottom-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-left { width: 7vw; }
+.bottom-right { width: 30vw; }

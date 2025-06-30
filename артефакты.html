@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Артефакты</title>
+  <script src="javascripts/script.js"></script>
+  <script src="javascripts/artifacts.js"></script>
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/artifacts.css">
+  <link rel="stylesheet" href="stylesheets/adaptive.css">
+</head>
+<body>
+  <header class="header">
+    <div class="main-page"><a href="index.html"><h2>ARMOR.AMOUR</h2></a></div>
+    <nav class="nav">
+      <a href="пространство.html">Пространство</a>
+      <a href="книги.html">Книги</a>
+      <a href="артефакты.html" class="active">Артефакты</a>
+      <a href="мероприятия.html">Мероприятия</a>
+    </nav>
+  </header>
+  <main class="artifacts-main">
+    <div class="artifacts-filter">
+      <span>Фильтр:</span>
+      <span class="art-filter" data-filter="available">[Доступно]</span>
+      <span class="art-filter" data-filter="reserved">[Зарезервировано]</span>
+    </div>
+    <div class="artifact-row">
+      <div class="artifact-block available">
+        <div class="artifact-image"></div>
+        <div class="artifact-info">
+          <p>Название 1</p><p>Размер 1</p><p>Цена 1</p>
+          <a href="mailto:artifact_1@armoramour.com" class="request">ЗАПРОСИТЬ</a>
+        </div>
+      </div>
+      <div class="artifact-block available">
+        <div class="artifact-image"></div>
+        <div class="artifact-info">
+          <p>Название 2</p><p>Размер 2</p><p>Цена 2</p>
+          <a href="mailto:artifact_2@armoramour.com" class="request">ЗАПРОСИТЬ</a>
+        </div>
+      </div>
+      <div class="artifact-block reserved">
+        <div class="artifact-image"></div>
+        <div class="artifact-info">
+          <p>Название 3</p><p>Размер 3</p><p>Цена 3</p>
+          <span class="request disabled">ЗАРЕЗЕРВИРОВАНО</span>
+        </div>
+      </div>
+      <div class="artifact-block reserved">
+        <div class="artifact-image"></div>
+        <div class="artifact-info">
+          <p>Название 4</p><p>Размер 4</p><p>Цена 4</p>
+          <span class="request disabled">ЗАРЕЗЕРВИРОВАНО</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-left">
+      <p>ARMOR AMOUR © 2025 <br> <br></p>
+      <p>ЦЕНТР ПРОЖИВАНИЯ ЧУВСТВ</p>
+    </div>
+    <div class="footer-right">
+      <p class="signup-title">Оставьте свой e-mail, чтобы получать уведомления о новых событиях и проектах.</p>
+      <form class="signup-form">
+        <input type="text" name="fio" placeholder="Фамилия и имя" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </footer>
+</body>
+</html>
