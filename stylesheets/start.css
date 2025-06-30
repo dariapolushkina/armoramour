@@ -11,35 +11,24 @@
   font-size: 0.95vw !important;
   line-height: 1.32vw !important; 
   letter-spacing: 0.02vw !important;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .bg-grad {
   width: 100vw;
   height: 100vh;
   background:
-    linear-gradient(115deg, #c6c6c6 10%, #292929 100%),
+    linear-gradient(150deg, #afafaf 10%, #292929 100%),
     radial-gradient(190% 100% at calc(50% + var(--x,0px)) calc(0% + var(--y,0px)), #ffffff, #1c1c1c),
     radial-gradient(190% 100% at calc(80% - var(--x,0px)) calc(0% - var(--y,0px)), #e0e0e0, #fafafa),
     radial-gradient(150% 210% at calc(100% + var(--x,0px)) calc(0% + var(--y,0px)), #999, #222),
     radial-gradient(100% 100% at calc(100% - var(--x,0px)) calc(30% - var(--y,0px)), #ccc, #5e5e5e),
-    linear-gradient(40deg, #696969, #ffffff);
+    linear-gradient(40deg, #373737, #e7e7e7);
   background-blend-mode: overlay,overlay,difference,difference,difference,normal;
   transition: background 0.15s;
   filter: blur(5px);
 }
 
-.bg-img {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;   
-  z-index: 1;              
-  background: url('../images/Group.png') center/cover no-repeat;
-  opacity: 0.2;    
-  mix-blend-mode: difference; 
-}
 
 .circle {
   position: absolute;
@@ -52,6 +41,7 @@
   cursor: pointer;
   z-index: 2;
   transition: opacity 0.3s;
+  mix-blend-mode: difference;
 }
 .circle:hover {
   mix-blend-mode: darken;
@@ -66,6 +56,7 @@
   z-index: 1;
   height: 88vh;
   transition: opacity 0.25s;
+  mix-blend-mode: difference;
 }
 .show-text .reveal-on-hover {
   opacity: 1;
@@ -78,6 +69,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5vh;
+  opacity: 50%;
 }
 
 .logo-img {

@@ -12,8 +12,9 @@ body {
   display:flex;
   width:100vw;
   height:80vh;
-  padding:2vh 2vw;
+  padding:2vh 2vw 4vh 2vw;
   gap:2vw;
+  border-bottom: 1px solid white;
 }
 .pr-left {
   display:flex;
@@ -50,8 +51,9 @@ body {
 
 .pr-block-2 {
   width:100vw;
-  margin-top:5vw;
-  padding:0vw 2vw;
+  margin-top:6vw;
+  padding:0vw 2vw 4vh 2vw;
+  border-bottom: 1px solid white;
 }
 .pr-block-2-content {
   display:flex;
@@ -61,6 +63,7 @@ body {
 ._1234 {
   display:flex;
   gap:1vw;
+  margin-top: -5vh;
   margin-bottom:1vw;
 }
 

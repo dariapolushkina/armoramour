@@ -9,6 +9,8 @@
   height:65vh;
   margin-top:2vw;
   padding-left:2vw;
+  padding-bottom: 4vh;
+  border-bottom: 1px solid white;
 }
 .book-description {
   margin-bottom: 1vw;

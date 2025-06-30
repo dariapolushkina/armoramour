@@ -3,7 +3,7 @@
 }
 
 .artifacts-filter {
-  opacity: 80%;
+  opacity: 70%;
   margin:3vw 2vw 2vw 2vw;
 }
 .art-filter {
@@ -12,6 +12,11 @@
 }
 .art-filter.active {
   border-bottom:0.1vw solid white;
+}
+
+.artifacts-main {
+  padding-bottom: 4vh;
+  border-bottom: 1px solid white;
 }
 
 .artifacts-main .artifact-row {
@@ -32,15 +37,24 @@
 .artifact-image {
   width:35vw;
   height:35vw;
-  background:white;
 }
 
 .artifact-info { 
+  margin-top: 1vw;
   text-align:right; 
+  margin-bottom: 2vw;
+}
+
+h1 {
+  margin-bottom: 0.5vw;
+}
+
+h2 {
+  color: grey;
 }
 
 .request {
   display:inline-block;
   margin-top:0.5vw;
-  color:grey;
+  text-decoration: none;
 }

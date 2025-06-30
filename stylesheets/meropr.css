@@ -3,7 +3,7 @@
 }
 
 .events-filter {
-  opacity: 80%;
+  opacity: 70%;
   margin-top:3vw;
   margin-left: 2vw;
 }
@@ -22,7 +22,14 @@
   flex-direction:column;
   padding:2vh 2vw; 
   margin-bottom:5vw;
+  padding-bottom: 4vh;
+  border-bottom: 1px solid white;
 }
+
+.footer {
+  margin-top: -5vw;
+}
+
 .event-top {
   display:flex; 
   justify-content:space-between;
